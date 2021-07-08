@@ -1,3 +1,10 @@
-Autenticação de login via GitHub usando a gem devise 
+User login authentication project and interface via GitHub and Google. This project was
+developed using the gems:
 
-Exercício proposto pela empresa Real Seguro Viagem -> https://www.seguroviagem.srv.br/
+-devise
+-omniauth-github omniauth
+-google-oauth2 
+
+and with the Ruby On Rails framework.
+
+Exercise proposed by the company Real Seguro Viagem -> https://www.seguroviagem.srv.br/
