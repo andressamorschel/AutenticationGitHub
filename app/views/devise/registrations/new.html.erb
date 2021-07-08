@@ -1,29 +1,101 @@
+<style>
+.container{
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: arial;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 4px 4px 18px -5px rgba(0,0,0, 0.8)
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: rgb(214,172,228);
+  background: linear-gradient(90deg, rgba(214,172,228,1) 0%, rgba(255,228,196,1) 100%);
+}
+
+.field {
+  margin: 10px 0; 
+}
+
+.field input{
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  padding: 10px 10px;
+  outline: none;
+  background: #FFFAFA;
+}
+
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.actions input[type="submit"]{
+  padding: 10px 20px;
+  border: none;
+  background-color: #f9d1e7;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.actions input[type="submit"]:hover{
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+  transition: .3s;
+}
+
+a{
+  color: #7c5d7d;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+</style>
+
+<div class="container">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field inputs">
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
   </div>
 
   <div class="field inputs">
-    <%= f.label :password %>
     <% if @minimum_password_length %>
 
     <% end %>
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password" , placeholder: "Password"%>
   </div>
 
   <div class="field inputs">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation" %>
   </div>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
-
 <%= render "devise/shared/links" %>
+</div>

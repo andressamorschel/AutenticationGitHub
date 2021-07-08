@@ -1,14 +1,88 @@
-<h2>Log in</h2>
+<style>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+#container{
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: arial;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 4px 4px 18px -5px rgba(0,0,0, 0.8)
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: rgb(214,172,228);
+  background: linear-gradient(90deg, rgba(214,172,228,1) 0%, rgba(255,228,196,1) 100%);
+}
+
+.field{
+  margin: 10px 0; 
+}
+
+.field input{
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  padding: 10px 20px;
+  outline: none;
+  background: #FFFAFA;
+}
+
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.actions input[type="submit"]{
+  padding: 10px 20px;
+  border: none;
+  background-color: #f9d1e7;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.actions input[type="submit"]:hover{
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+  transition: .3s;
+}
+
+a{
+  color: #7c5d7d;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+</style>
+
+<div id="container">
+  <h2>Log in</h2>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email" %>
+    </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder:"Password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
@@ -24,8 +98,8 @@
 
   <br>
   <div>
-    <%= link_to 'Login com GitHub', user_github_omniauth_authorize_path, method: :post %>
+    <%= render "devise/shared/links"%>
   </div>
 <% end %>
+</div>
 
-<%# <%= render "devise/shared/links" %>

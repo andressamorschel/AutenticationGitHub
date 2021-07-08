@@ -2,7 +2,9 @@ Devise.setup do |config|
 
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
+  config.omniauth :google_oauth2, '79226456306-mi4nh9irl0gkff379s7mhnn3f1256nos.apps.googleusercontent.com', '792Os9s0PjAFWvwdYpls8EaF', {}
 
+  
   require 'devise/orm/active_record'
 
   config.omniauth :github, '3139c36e615bba43397c', '32401ae9b84956a43918ef256eea6e0c4eb0dc95', scope: 'user:email'
