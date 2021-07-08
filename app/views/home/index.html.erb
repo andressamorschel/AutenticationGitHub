@@ -1,2 +1,42 @@
-<h2>Hi, <%= current_user.name %></h2>
-<%= link_to "Logoff", destroy_user_session_path, method: :delete %>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Mukta&family=Raleway:wght@200&display=swap');
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 20px;
+  border: inset 1px;
+  box-shadow: 2px 2px 4px rgba(0,0,0, 0.4) ;
+}
+
+body{ 
+  height: 100vh;
+  background: rgb(214,172,228);
+  background: linear-gradient(90deg, rgba(214,172,228,1) 0%, rgba(255,228,196,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  color: #7c5d7d;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+</style>
+<div class="container">
+  <h2>Hi, <%= current_user.name %>, welcome!</h2>
+  <%= link_to "Logoff", destroy_user_session_path, method: :delete %>
+</div>
