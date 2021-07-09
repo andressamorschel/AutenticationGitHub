@@ -7,4 +7,6 @@ developed using the gems:<br>
 
 and with the Ruby On Rails framework.<br>
 
-Exercise proposed by the company Real Seguro Viagem -> https://www.seguroviagem.srv.br/
+Exercise proposed by the company Real Seguro Viagem -> https://www.seguroviagem.srv.br/ <br>
+
+Project link: https://authentication-for-user-login.herokuapp.com/users/sign_in
