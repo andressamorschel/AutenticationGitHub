@@ -7,8 +7,7 @@ Devise.setup do |config|
   
   require 'devise/orm/active_record'
 
-  config.omniauth :github, '3139c36e615bba43397c', '32401ae9b84956a43918ef256eea6e0c4eb0dc95', scope: 'user:email'
-
+  config.omniauth :github, '93799bb32b54d7620bad', '719cbce12cb5ee1c4d39c58943f0c2c9d23f7549', scope: 'user:email'
 
   config.case_insensitive_keys = [:email]
 
