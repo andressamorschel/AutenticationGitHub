@@ -1,5 +1,5 @@
 <h1 alig>Authentication For User Login</h1>
-<img src="img/interface.jpeg" width="70%" align="center" alt="Interface" />
+<img src="img/interface.jpeg" width="70%" text-align="center" alt="Interface" />
 
 User login authentication project and interface via GitHub and Google. This project was
 developed using the gems:<br>
