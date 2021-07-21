@@ -1,5 +1,5 @@
 <h1>Authentication For User Login</h1>
-<img src="img/interface.png" alt="Interface" />
+<img src="img/interface.jpeg" alt="Interface" />
 
 User login authentication project and interface via GitHub and Google. This project was
 developed using the gems:<br>
