@@ -1,5 +1,8 @@
-<h1 alig>Authentication For User Login</h1>
-<img src="img/interface.jpeg" width="70%" text-align="center" alt="Interface" />
+<h1 align="center">Authentication For User Login</h1>
+
+<h2>Status do projeto:</h2>🚀 Em construção...  
+
+<img src="img/interface.jpeg" width="70%" alt="Interface" />
 
 User login authentication project and interface via GitHub and Google. This project was
 developed using the gems:<br>
