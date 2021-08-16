@@ -39,3 +39,8 @@
 yarn-debug.log*
 .yarn-integrity
 /config/devise.rb
+./bin
+./log
+./ruby-version
+./vendor
+./lib
