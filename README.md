@@ -1,6 +1,6 @@
 <h1 align="center">Authentication For User Login</h1>
 
-<h2>Project status:</h2>🚀 Finished 🚧
+<h2>Project status:</h2>🚀 Finished
 
 ## Description:
 <p>
